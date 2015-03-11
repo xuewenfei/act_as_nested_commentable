@@ -1,4 +1,5 @@
 source "https://rubygems.org"
+gemspec :path => File.expand_path('../', __FILE__)
 
 # Declare your gem's dependencies in act_as_nested_commentable.gemspec.
 # Bundler will treat runtime dependencies like base dependencies, and
@@ -12,5 +13,8 @@ gemspec
 
 # To use debugger
 # gem 'debugger'
-gem 'rails', '3.2.13'
+RAILS_VERSION = nil unless defined? RAILS_VERSION
+gem 'railties', RAILS_VERSION
+gem 'activerecord', RAILS_VERSION
+gem 'actionpack', RAILS_VERSION
 gem 'awesome_nested_set'
