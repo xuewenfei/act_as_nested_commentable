@@ -13,8 +13,5 @@ gemspec
 
 # To use debugger
 # gem 'debugger'
-RAILS_VERSION = nil unless defined? RAILS_VERSION
-gem 'railties', RAILS_VERSION
-gem 'activerecord', RAILS_VERSION
-gem 'actionpack', RAILS_VERSION
+gem 'activerecord'
 gem 'awesome_nested_set'
