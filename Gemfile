@@ -14,4 +14,4 @@ gemspec
 # To use debugger
 # gem 'debugger'
 gem 'activerecord'
-gem 'awesome_nested_set', '>= 2.0'
+gem 'awesome_nested_set', '2.1.6'
