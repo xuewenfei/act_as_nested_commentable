@@ -23,13 +23,13 @@ module Acts #:nodoc:
 
       def define_role_based_inflection_3(role)
         has_many "#{role.to_s}_comments".to_sym,
-          has_many_options(role).merge(:conditions => {role: role.to_s})
+                 has_many_options(role).merge(:conditions => {role: role.to_s})
       end
 
       def define_role_based_inflection_4(role)
         has_many "#{role.to_s}_comments".to_sym,
-          -> { where(role: role.to_s) },
-          has_many_options(role)
+                 -> { where(role: role.to_s) },
+                 has_many_options(role)
       end
 
       def has_many_options(role)
@@ -37,7 +37,7 @@ module Acts #:nodoc:
          :as => :commentable,
          :dependent => :destroy,
          :before_add => Proc.new { |x, c| c.role = role.to_s }
-         }
+        }
       end
     end
 
@@ -84,7 +84,7 @@ module Acts #:nodoc:
             end
           }
         end
-        include Acts::Commentable::LocalInstanceMethods
+        include Acts::NestCommentable::LocalInstanceMethods
       end
     end
 
@@ -109,5 +109,6 @@ module Acts #:nodoc:
   end
 end
 
-ActiveRecord::Base.send(:include, Wenfei::Acts::Commentable)
+ActiveRecord::Base.send(:include, Acts::NestCommentable)
+
 
