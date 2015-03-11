@@ -7,9 +7,9 @@ require "act_as_nested_commentable/version"
 Gem::Specification.new do |s|
   s.name        = "act_as_nested_commentable"
   s.version     = ActAsNestedCommentable::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
+  s.authors     = ["Xue Wenfei"]
+  s.email       = ["286xwf@163.com"]
+  s.homepage    = "xzlearning.com"
   s.summary     = "TODO: Summary of ActAsNestedCommentable."
   s.description = "TODO: Description of ActAsNestedCommentable."
   s.license     = "MIT"
@@ -17,7 +17,5 @@ Gem::Specification.new do |s|
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "rails", "~> 4.1.9"
-
-  s.add_development_dependency "sqlite3"
+  s.add_dependency "rails", "< 4.0.0"
 end
