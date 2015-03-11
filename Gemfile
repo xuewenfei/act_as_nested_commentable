@@ -12,5 +12,5 @@ gemspec
 
 # To use debugger
 # gem 'debugger'
-gem 'rails', '3.2.16'
+gem 'rails', '3.2.13'
 gem 'awesome_nested_set'
