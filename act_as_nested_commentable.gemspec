@@ -10,8 +10,8 @@ Gem::Specification.new do |s|
   s.authors     = ["Xue Wenfei"]
   s.email       = ["286xwf@163.com"]
   s.homepage    = "xzlearning.com"
-  s.summary     = "TODO: Summary of ActAsNestedCommentable."
-  s.description = "TODO: Description of ActAsNestedCommentable."
+  s.summary     = "Summary of ActAsNestedCommentable."
+  s.description = "Description of ActAsNestedCommentable."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
