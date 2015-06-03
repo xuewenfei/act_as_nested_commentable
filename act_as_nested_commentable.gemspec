@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = ActAsNestedCommentable::VERSION
   s.authors     = ["Xue Wenfei"]
   s.email       = ["286xwf@163.com"]
-  s.homepage    = "xzlearning.com"
+  s.homepage    = "http://xzlearning.com"
   s.summary     = "Summary of ActAsNestedCommentable."
   s.description = "Description of ActAsNestedCommentable."
   s.license     = "MIT"
